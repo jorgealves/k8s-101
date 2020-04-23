@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: simpleapp
+  labels:
+    name: simpleapp
+spec:
+  containers:
+  - name: simpleapp
+    image: jorgeandrealves/simpleapp:latest
+    resources:
+      limits:
+        memory: "128Mi"
+        cpu: "500m"
+    ports:
+      - containerPort: 5000
