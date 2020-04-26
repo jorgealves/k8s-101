@@ -10,7 +10,7 @@ spec:
     image: jorgeandrealves/simpleapp:latest
     resources:
       limits:
-        memory: "128Mi"
-        cpu: "500m"
+        memory: "68Mi"
+        cpu: "50m"
     ports:
       - containerPort: 5000
