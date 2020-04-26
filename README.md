@@ -1,5 +1,5 @@
 # k8s-101
-> A simple way to work with your app o k8s
+> A simple way to work with your app on k8s
 
 *istio* - container all config necessary to deploy simpleapp with istio
 
