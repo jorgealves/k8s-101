@@ -16,8 +16,13 @@ istioctl dashboard prometheus
 #show grafana
 istioctl dashboard grafana
 
+
+
 # dashboard ids to import to grafana
 8588
 315
 7249
 5231
+
+# Test Observability
+watch -n 0.5 curl http://<CLUSTER IP HERE>:<SIMPLEAPP SERVICE PORT>

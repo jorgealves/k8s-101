@@ -1,7 +1,7 @@
 # k8s-101
 > A simple way to work with your app on k8s
 
-*istio* - container all config necessary to deploy simpleapp with istio
+*istio* - container all config necessary to deploy simpleapp with [istio](https://istio.io/docs/setup/getting-started/#download)
 
 *k8s* - simple k8s objects to demonstrate how simply k8s works
 
