@@ -7,11 +7,13 @@ kubectl label namespace default istio-injection=enabled
 #show kiali - default user and pass 'admin:admin'
 istioctl dashboard kiali
 
+# show jaeger
 istioctl dashboard jaeger
 
+# show prometheus
 istioctl dashboard prometheus
 
-
+#show grafana
 istioctl dashboard grafana
 
 # dashboard ids to import to grafana
