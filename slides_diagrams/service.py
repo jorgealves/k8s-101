@@ -1,6 +1,6 @@
-from diagrams import Diagram, Cluster
-from diagrams.k8s.compute import Pod
-from diagrams.onprem.container import Docker
+from slides_diagrams import Diagram, Cluster
+from slides_diagrams.k8s.compute import Pod
+from slides_diagrams.onprem.container import Docker
 
 
 with Diagram('service', show=False) as result:

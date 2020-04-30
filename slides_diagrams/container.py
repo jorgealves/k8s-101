@@ -1,6 +1,6 @@
-from diagrams import Diagram
+from slides_diagrams import Diagram
 
-from diagrams.onprem.container import Docker
+from slides_diagrams.onprem.container import Docker
 
 
 with Diagram('Container', show=False) as result:
