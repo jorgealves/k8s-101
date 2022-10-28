@@ -1,3 +1,25 @@
+# PRE REQUISITES
+# have at least one Rpi (it can be model 2+ but I recommend mode 3b+)
+# In each Rpi you have do append container feature inside /boot/cmdline.txt file
+cgroup_enable=cpuset cgroup_memory=1 cgroup_enable=memory
+
+# After that you should make sure that you have SSH connection to your Rpi
+#
+# Then, you install k3sup on your machine 
+# https://github.com/alexellis/k3sup#-micro-tutorial-for-raspberry-pi-2-3-or-4-
+#
+# Install your master control-plane 
+
+k3sup install --context=pikube --merge --host pimercury --user pi  
+
+# Join command to enable a worker joining a cluster
+#
+k3sup join --server-host pimercury --host pivenus --user pi 
+
+
+# in case you use a k3sup cluster turn off traefik lb daemon
+kubectl -n kube-system patch daemonset <name-of-daemon-set> -p '{"spec": {"template": {"spec": {"nodeSelector": {"non-existing": "true"}}}}}'
+
 # use istioctl to create base CRDs
 istioctl install --set profile=demo -y
 
